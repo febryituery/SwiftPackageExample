@@ -16,6 +16,8 @@
 		02F76E4D289027BF004A4AC5 /* SwiftPackageExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F76E4C289027BF004A4AC5 /* SwiftPackageExampleTests.swift */; };
 		02F76E57289027BF004A4AC5 /* SwiftPackageExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F76E56289027BF004A4AC5 /* SwiftPackageExampleUITests.swift */; };
 		02F76E59289027BF004A4AC5 /* SwiftPackageExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F76E58289027BF004A4AC5 /* SwiftPackageExampleUITestsLaunchTests.swift */; };
+		02F76E6728902A86004A4AC5 /* TextInput in Frameworks */ = {isa = PBXBuildFile; productRef = 02F76E6628902A86004A4AC5 /* TextInput */; };
+		02F76E6A28902AB1004A4AC5 /* RegisterView in Frameworks */ = {isa = PBXBuildFile; productRef = 02F76E6928902AB1004A4AC5 /* RegisterView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02F76E6A28902AB1004A4AC5 /* RegisterView in Frameworks */,
+				02F76E6728902A86004A4AC5 /* TextInput in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +147,10 @@
 			dependencies = (
 			);
 			name = SwiftPackageExample;
+			packageProductDependencies = (
+				02F76E6628902A86004A4AC5 /* TextInput */,
+				02F76E6928902AB1004A4AC5 /* RegisterView */,
+			);
 			productName = SwiftPackageExample;
 			productReference = 02F76E32289027BD004A4AC5 /* SwiftPackageExample.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,10 @@
 				Base,
 			);
 			mainGroup = 02F76E29289027BD004A4AC5;
+			packageReferences = (
+				02F76E6528902A86004A4AC5 /* XCRemoteSwiftPackageReference "TextInput" */,
+				02F76E6828902AB1004A4AC5 /* XCRemoteSwiftPackageReference "RegisterView" */,
+			);
 			productRefGroup = 02F76E33289027BD004A4AC5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -602,6 +614,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		02F76E6528902A86004A4AC5 /* XCRemoteSwiftPackageReference "TextInput" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/febryituery/TextInput";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		02F76E6828902AB1004A4AC5 /* XCRemoteSwiftPackageReference "RegisterView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/febryituery/RegisterView";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		02F76E6628902A86004A4AC5 /* TextInput */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02F76E6528902A86004A4AC5 /* XCRemoteSwiftPackageReference "TextInput" */;
+			productName = TextInput;
+		};
+		02F76E6928902AB1004A4AC5 /* RegisterView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02F76E6828902AB1004A4AC5 /* XCRemoteSwiftPackageReference "RegisterView" */;
+			productName = RegisterView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 02F76E2A289027BD004A4AC5 /* Project object */;
 }

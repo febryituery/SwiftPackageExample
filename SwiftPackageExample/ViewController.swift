@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import TextInput
+import RegisterView
 
 class ViewController: UIViewController {
 
@@ -14,6 +16,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func btnRegister(_ sender: UIButton) {
+        let vc = RegisterViewController.storyboardVC
+        present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func btnLogin(_ sender: UIButton) {
+        let vc = TextInputViewController.storyboardVC
+        present(vc, animated: true, completion: nil)
+    }
 }
 

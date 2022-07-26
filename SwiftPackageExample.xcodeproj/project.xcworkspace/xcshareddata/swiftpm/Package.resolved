@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "registerview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/febryituery/RegisterView",
+      "state" : {
+        "branch" : "main",
+        "revision" : "f9d2f918e5bd08f67f7fbc53672a1453e1f01ba1"
+      }
+    },
+    {
+      "identity" : "textinput",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/febryituery/TextInput",
+      "state" : {
+        "branch" : "main",
+        "revision" : "f654f0699d8746d28ae0760a6de83a6fdd22b273"
+      }
+    }
+  ],
+  "version" : 2
+}
